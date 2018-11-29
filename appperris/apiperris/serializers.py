@@ -4,7 +4,7 @@ from .models import Perro, Cliente
 class PerroSerializer(serializers.ModelSerializer):
     class Meta:
         model = Perro
-        fields = ('id', 'nombre', 'raza', 'descripciom', 'img',)
+        fields = ('id', 'nombre', 'raza', 'descripciom',)
 
 class ClienteSerializer(serializers.ModelSerializer):
     class Meta:

@@ -126,7 +126,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 CORS_ORIGIN_WHITELIST = (
-    'https://jkmatta.github.io/adopta.html' #cambiar a http://127.0.0.1:8887/ para hacer test
+    'https://jkmatta.github.io/' #cambiar a http://127.0.0.1:8887/ para hacer test
 )                                #cambiar a https://jkmatta.github.io/ para subir a web
 
 #Media
