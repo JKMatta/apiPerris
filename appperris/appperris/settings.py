@@ -25,7 +25,7 @@ SECRET_KEY = '2*r-9=op2+2ekp%u7n=!4+$pg1fxsamg(qblq=g(lb37!n7**v'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['Khakov.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1','Khakov.pythonanywhere.com']
 
 
 # Application definition
@@ -126,5 +126,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 CORS_ORIGIN_WHITELIST = (
-    'https://jkmatta.github.io/'
-)
+    'https://jkmatta.github.io/' #cambiar a http://127.0.0.1:8887/ para hacer test
+)                                #cambiar a https://jkmatta.github.io/ para subir a web
+
+#Media
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
